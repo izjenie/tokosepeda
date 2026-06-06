@@ -90,7 +90,7 @@ function Home() {
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <div className="flex items-center gap-12">
             <Link href="/" className="text-2xl md:text-3xl font-extrabold tracking-tighter text-primary">
-              PEDAL<span className="text-accent">PRO</span>
+              PEDAL<span className="text-accent">-UNLIMITED</span>
             </Link>
             
             <nav className="hidden md:flex items-center gap-8 font-medium text-sm">
@@ -340,7 +340,7 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="lg:col-span-1">
               <Link href="/" className="text-3xl font-extrabold tracking-tighter text-white block mb-6">
-                PEDAL<span className="text-accent">PRO</span>
+                PEDAL<span className="text-accent">-UNLIMITED</span>
               </Link>
               <p className="text-primary-foreground/70 mb-6 leading-relaxed max-w-sm">
                 Premium bicycles and gear for those who demand the best from their ride. Built for the journey ahead.
@@ -400,7 +400,7 @@ function Home() {
           </div>
 
           <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/50">
-            <p>&copy; {new Date().getFullYear()} Pedal Pro. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Pedal-Unlimited. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
