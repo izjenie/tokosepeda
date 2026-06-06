@@ -1,0 +1,68 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Ck3FWRAuKacGtZb4szVHg"
+uri = "file://artifacts/pedal-pro/src/assets/images/hero.png"
+type = "image"
+title = "Dramatic cycling hero image"
+
+[[generated]]
+id = "oAbyo5htVFZGGCJ3H4lXo"
+uri = "file://artifacts/pedal-pro/src/assets/images/product-trailblazer.png"
+type = "image"
+title = "Mountain bike product shot"
+
+[[generated]]
+id = "2cpkP8Q_M5U2q4nVvc8KE"
+uri = "file://artifacts/pedal-pro/src/assets/images/product-aerosprint.png"
+type = "image"
+title = "Road bike product shot"
+
+[[generated]]
+id = "L2mLwgNjnkYVIXCrtfm-n"
+uri = "file://artifacts/pedal-pro/src/assets/images/product-cityglide.png"
+type = "image"
+title = "Hybrid bike product shot"
+
+[[generated]]
+id = "vG7cd49KOMKpzGk1C4d0b"
+uri = "file://artifacts/pedal-pro/src/assets/images/product-summitjunior.png"
+type = "image"
+title = "Kids bike product shot"
+
+[[generated]]
+id = "8w87xg0AsjpMUGNsxENI9"
+uri = "file://artifacts/pedal-pro/src/assets/images/product-enduroelite.png"
+type = "image"
+title = "Enduro mountain bike shot"
+
+[[generated]]
+id = "z9JZ6UB5uGPL5ulG_9A0o"
+uri = "file://artifacts/pedal-pro/src/assets/images/product-velocityr5.png"
+type = "image"
+title = "Premium road bike shot"
+
+[[generated]]
+id = "LhaCHqBf1PIPYF5RklsjO"
+uri = "file://artifacts/pedal-pro/src/assets/images/category-mountain.png"
+type = "image"
+title = "Mountain category action shot"
+
+[[generated]]
+id = "H05nWrAbCXiQgXI3qn_NR"
+uri = "file://artifacts/pedal-pro/src/assets/images/category-road.png"
+type = "image"
+title = "Road category action shot"
+
+[[generated]]
+id = "mgzENhZY7nUwt0_s9L5NZ"
+uri = "file://artifacts/pedal-pro/src/assets/images/category-hybrid.png"
+type = "image"
+title = "Hybrid category lifestyle shot"
+
+[[generated]]
+id = "IPGHN97DJNJO2E7XqXOVL"
+uri = "file://artifacts/pedal-pro/src/assets/images/category-kids.png"
+type = "image"
+title = "Kids category playful shot"
