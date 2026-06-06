@@ -1,0 +1,102 @@
+10:47:10.409	Cloning repository...
+10:47:11.826	From https://github.com/izjenie/tokosepeda
+10:47:11.826	 * branch            b7aa334224509294b545c3abab11397fc1b3a9b4 -> FETCH_HEAD
+10:47:11.826	
+10:47:11.927	HEAD is now at b7aa334 Fix infinite redirect loop in Cloudflare Worker configuration
+10:47:11.927	
+10:47:12.186	
+10:47:12.186	Using v2 root directory strategy
+10:47:12.203	Success: Finished cloning repository files
+10:47:14.492	Checking for configuration in a Wrangler configuration file (BETA)
+10:47:14.493	
+10:47:14.494	Found wrangler.toml file. Reading build configuration...
+10:47:14.696	A Wrangler configuration file was found but it does not appear to be valid. Did you mean to use wrangler.toml to configure Pages? If so, then make sure the file is valid and contains the `pages_build_output_dir` property. Skipping file and continuing.
+10:47:14.851	Detected the following tools from environment: pnpm@10.11.1, nodejs@22.16.0
+10:47:16.098	Installing project dependencies: pnpm install
+10:47:16.704	Scope: all 9 workspace projects
+10:47:16.785	Lockfile is up to date, resolution step is skipped
+10:47:16.819	Progress: resolved 1, reused 0, downloaded 0, added 0
+10:47:16.898	Packages: +485
+10:47:16.898	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+10:47:17.820	Progress: resolved 485, reused 0, downloaded 179, added 140
+10:47:18.823	Progress: resolved 485, reused 0, downloaded 317, added 264
+10:47:19.827	Progress: resolved 485, reused 0, downloaded 407, added 317
+10:47:20.499	Progress: resolved 485, reused 0, downloaded 485, added 485, done
+10:47:20.735	.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+10:47:20.841	.../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+10:47:21.229	
+10:47:21.230	devDependencies:
+10:47:21.230	+ prettier 3.8.3
+10:47:21.230	+ typescript 5.9.3
+10:47:21.230	
+10:47:21.269	. preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+10:47:21.319	. preinstall: Done
+10:47:21.490	Done in 5.1s using pnpm v10.11.1
+10:47:21.532	Executing user command: pnpm run build
+10:47:22.110	
+10:47:22.110	> workspace@0.0.0 build /opt/buildhome/repo
+10:47:22.110	> pnpm run typecheck && pnpm -r --filter "!@workspace/mockup-sandbox" --if-present run build
+10:47:22.110	
+10:47:22.468	
+10:47:22.468	> workspace@0.0.0 typecheck /opt/buildhome/repo
+10:47:22.469	> pnpm run typecheck:libs && pnpm -r --filter "./artifacts/**" --filter "./scripts" --if-present run typecheck
+10:47:22.469	
+10:47:22.917	
+10:47:22.917	> workspace@0.0.0 typecheck:libs /opt/buildhome/repo
+10:47:22.917	> tsc --build
+10:47:22.917	
+10:47:25.625	Scope: 4 of 9 workspace projects
+10:47:25.629	artifacts/api-server typecheck$ tsc -p tsconfig.json --noEmit
+10:47:25.630	artifacts/mockup-sandbox typecheck$ tsc -p tsconfig.json --noEmit
+10:47:25.631	artifacts/pedal-pro typecheck$ tsc -p tsconfig.json --noEmit
+10:47:25.632	scripts typecheck$ tsc -p tsconfig.json --noEmit
+10:47:26.995	scripts typecheck: Done
+10:47:27.771	artifacts/api-server typecheck: Done
+10:47:32.967	artifacts/mockup-sandbox typecheck: Done
+10:47:33.367	artifacts/pedal-pro typecheck: Done
+10:47:33.873	Scope: 7 of 9 workspace projects
+10:47:33.877	artifacts/api-server build$ node ./build.mjs
+10:47:33.877	artifacts/pedal-pro build$ vite build --config vite.config.ts
+10:47:34.187	artifacts/api-server build:   dist/index.mjs                       1.4mb ⚠️
+10:47:34.188	artifacts/api-server build:   dist/pino-worker.mjs               153.4kb
+10:47:34.189	artifacts/api-server build:   dist/pino-file.mjs                 142.1kb
+10:47:34.189	artifacts/api-server build:   dist/pino-pretty.mjs               114.6kb
+10:47:34.191	artifacts/api-server build:   dist/thread-stream-worker.mjs        7.3kb
+10:47:34.192	artifacts/api-server build:   dist/index.mjs.map                   2.1mb
+10:47:34.192	artifacts/api-server build:   dist/pino-worker.mjs.map           256.9kb
+10:47:34.192	artifacts/api-server build:   dist/pino-file.mjs.map             229.0kb
+10:47:34.192	artifacts/api-server build:   dist/pino-pretty.mjs.map           204.0kb
+10:47:34.192	artifacts/api-server build:   dist/thread-stream-worker.mjs.map   12.0kb
+10:47:34.192	artifacts/api-server build: ⚡ Done in 200ms
+10:47:34.198	artifacts/api-server build: Done
+10:47:34.500	artifacts/pedal-pro build: vite v7.3.3 building client environment for production...
+10:47:34.608	artifacts/pedal-pro build: transforming...
+10:47:35.346	artifacts/pedal-pro build: src/components/ui/tooltip.tsx (2:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+10:47:38.548	artifacts/pedal-pro build: ✓ 2185 modules transformed.
+10:47:39.036	artifacts/pedal-pro build: rendering chunks...
+10:47:39.045	artifacts/pedal-pro build: computing gzip size...
+10:47:39.063	artifacts/pedal-pro build: dist/index.html                                    1.37 kB │ gzip:   0.54 kB
+10:47:39.064	artifacts/pedal-pro build: dist/assets/product-cityglide-BOdDeeLz.png       620.10 kB
+10:47:39.065	artifacts/pedal-pro build: dist/assets/product-trailblazer-FG2QvMXM.png     716.98 kB
+10:47:39.065	artifacts/pedal-pro build: dist/assets/product-aerosprint-CwoaUJfm.png      779.35 kB
+10:47:39.065	artifacts/pedal-pro build: dist/assets/product-summitjunior-C_yd4Gba.png    795.49 kB
+10:47:39.065	artifacts/pedal-pro build: dist/assets/product-enduroelite-lPzUDZUk.png     931.81 kB
+10:47:39.066	artifacts/pedal-pro build: dist/assets/product-velocityr5-Daa35uR1.png      937.26 kB
+10:47:39.066	artifacts/pedal-pro build: dist/assets/hero-BTWPclih.png                  1,416.28 kB
+10:47:39.066	artifacts/pedal-pro build: dist/assets/category-road-aJs-cw-h.png         1,854.28 kB
+10:47:39.066	artifacts/pedal-pro build: dist/assets/category-kids-BOF5UkLq.png         1,898.20 kB
+10:47:39.066	artifacts/pedal-pro build: dist/assets/category-mountain-DZgJvgb1.png     2,024.39 kB
+10:47:39.066	artifacts/pedal-pro build: dist/assets/category-hybrid-gEcakMH1.png       2,075.78 kB
+10:47:39.070	artifacts/pedal-pro build: dist/assets/index-DJWR0aqS.css                   106.56 kB │ gzip:  17.15 kB
+10:47:39.070	artifacts/pedal-pro build: dist/assets/index-DLVd-YUq.js                    462.85 kB │ gzip: 149.70 kB
+10:47:39.070	artifacts/pedal-pro build: ✓ built in 4.51s
+10:47:39.151	artifacts/pedal-pro build: Done
+10:47:39.190	Finished
+10:47:39.790	Checking for configuration in a Wrangler configuration file (BETA)
+10:47:39.790	
+10:47:39.790	Found wrangler.toml file. Reading build configuration...
+10:47:39.952	A Wrangler configuration file was found but it does not appear to be valid. Did you mean to use wrangler.toml to configure Pages? If so, then make sure the file is valid and contains the `pages_build_output_dir` property. Skipping file and continuing.
+10:47:39.953	Note: No functions dir at /functions found. Skipping.
+10:47:39.953	Validating asset output directory
+10:47:39.953	Error: Output directory "dist" not found.
+10:47:40.534	Failed: build output directory not found
